@@ -1,7 +1,7 @@
 from flask import Flask
 
 app = Flask(__name__)
-PORT = 1323
+PORT = 5000
 
 # catches all urls
 @app.route('/')
@@ -9,4 +9,4 @@ def hello():
     return "Hello World!"
 
 if __name__ == "__main__":
-    app.run(port=PORT)
+    app.run(host='0.0.0.0', port=PORT)
