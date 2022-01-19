@@ -4,8 +4,7 @@ app = Flask(__name__)
 PORT = 1323
 
 # catches all urls
-@app.route('/', defaults={'path': ''})
-@app.route('/<path:path>')
+@app.route('/')
 def hello():
     return "Hello World!"
 
