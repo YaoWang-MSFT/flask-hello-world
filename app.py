@@ -1,9 +1,11 @@
 from flask import Flask
 
 app = Flask(__name__)
-PORT = 8000
+PORT = 1323
 
-@app.route("/")
+# catches all urls
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
 def hello():
     return "Hello World!"
 
