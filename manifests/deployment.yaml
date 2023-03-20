@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: externalip-test
+  name: python-test
   labels:
-    app: externalip-test
-  namespace: namespace-workflow-1679338369707
+    app: python-test
+  namespace: namespace-workflow-1679342300433
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: externalip-test
+      app: python-test
   template:
     metadata:
       labels:
-        app: externalip-test
+        app: python-test
     spec:
       containers:
-        - name: externalip-test
-          image: acrworkflow1679338369707.azurecr.io/image-workflow-1679338369707:latest
+        - name: python-test
+          image: acrworkflow1679342300433.azurecr.io/image-workflow-1679342300433:latest
           ports:
             - containerPort: 8000
