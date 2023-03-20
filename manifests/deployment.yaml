@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python-test
+  labels:
+    app: python-test
+  namespace: namespace-workflow-1679342511452
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: python-test
+  template:
+    metadata:
+      labels:
+        app: python-test
+    spec:
+      containers:
+        - name: python-test
+          image: acrworkflow1679342511452.azurecr.io/image-workflow-1679342511452:latest
+          ports:
+            - containerPort: 8000
