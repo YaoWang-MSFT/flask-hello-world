@@ -6,10 +6,10 @@ name: test0417-002
     workflow_dispatch: {}
 env:
     ACR_RESOURCE_GROUP: wy-rg-01
-    AZURE_CONTAINER_REGISTRY: acrworkflow1681745288680
+    AZURE_CONTAINER_REGISTRY: acrworkflow1681745537531
     CLUSTER_NAME: aks-wy-0413
     CLUSTER_RESOURCE_GROUP: wy-rg-01
-    CONTAINER_NAME: image-workflow-1681745288680
+    CONTAINER_NAME: image-workflow-1681745537531
     DEPLOYMENT_MANIFEST_PATH: |
         manifests/deployment.yaml
         manifests/service.yaml
