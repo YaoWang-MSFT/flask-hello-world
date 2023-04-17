@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: test0417-002
-          image: acrworkflow1681745288680.azurecr.io/image-workflow-1681745288680:latest
+          image: acrworkflow1681745537531.azurecr.io/image-workflow-1681745537531:latest
           ports:
             - containerPort: 80
