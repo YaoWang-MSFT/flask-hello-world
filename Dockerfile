@@ -1,6 +1,6 @@
 FROM python:3.11-slim
-ENV PORT 80
-EXPOSE 80
+ENV PORT 8000
+EXPOSE 8000
 WORKDIR /usr/src/app
 
 COPY requirements.txt ./
