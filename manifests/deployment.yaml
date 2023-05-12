@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: test1234
+  name: test1234-0512
   labels:
-    app: test1234
-  namespace: namespace-workflow-1683903691417
+    app: test1234-0512
+  namespace: namespace-workflow-1683903785348
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: test1234
+      app: test1234-0512
   template:
     metadata:
       labels:
-        app: test1234
+        app: test1234-0512
     spec:
       containers:
-        - name: test1234
-          image: wyregistrydemo.azurecr.io/testimage0512:latest
+        - name: test1234-0512
+          image: wyregistrydemo.azurecr.io/image-workflow-1683903785348:latest
           ports:
             - containerPort: 8000
